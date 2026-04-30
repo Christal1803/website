@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #1e1a17;
+  color: #fff8ed;
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+::selection {
+  background: #c9a96e;
+  color: #1e1a17;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c9a96e #1e1a17;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes hero-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes hero-scroll {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  50.01% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes hero-scroll-dot {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.5;
+  }
+}
+
+@keyframes modal-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-content-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.modal-overlay-anim {
+  animation: modal-overlay-in 200ms ease-out;
+}
+
+.modal-content-anim {
+  animation: modal-content-in 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hero-marquee-anim {
+  animation: hero-marquee 25s linear infinite;
+}
+
+@media (max-width: 767px) {
+  .hero-marquee-anim {
+    animation-duration: 30s;
+  }
+}
