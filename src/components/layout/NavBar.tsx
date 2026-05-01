@@ -11,9 +11,9 @@ import { Logo } from "@/components/ui/Logo";
 
 const NAV_LINKS = [
   { href: "/#about", label: "About" },
-  { href: "/services", label: "Services" },
+  // { href: "/services", label: "Services" },
   { href: "/rarescore", label: "RareScore\u2122" },
-  { href: "/intelligence", label: "Intelligence" },
+  // { href: "/intelligence", label: "Intelligence" },
 ];
 
 const PHONE = "+1 (212) 555-0142";
@@ -111,14 +111,13 @@ export function NavBar() {
           <span className="mr-6 hidden font-mono text-[12px] text-muted md:inline">
             {PHONE}
           </span>
-          <button
-            type="button"
-            onClick={openContact}
+          <a
+            href="mailto:info@rareadvisory.co"
             data-cursor="hover"
-            className={cn("hidden px-5 py-2 md:inline-block", contactButtonBase)}
+            className="hidden font-mono text-[12px] text-muted transition-colors hover:text-cream md:inline"
           >
-            Contact
-          </button>
+            info@rareadvisory.co
+          </a>
           <button
             type="button"
             onClick={() => setMenuOpen(true)}

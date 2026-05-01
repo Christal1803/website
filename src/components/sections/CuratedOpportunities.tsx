@@ -8,22 +8,22 @@ import { openContactDrawer } from "@/lib/events";
 const PROPERTIES = [
   {
     id: "ecr",
-    name: "ECR Sea-Facing Villas",
-    range: "\u20B98\u201325 Cr",
+    name: "Coastal Estate, ECR",
+    range: "Price on request",
     image:
       "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1600&q=85&auto=format&fit=crop",
   },
   {
     id: "boat-club",
-    name: "Boat Club Road Estates",
-    range: "\u20B915\u201340 Cr",
+    name: "Boulevard Penthouse, Boat Club",
+    range: "\u20B912.5Cr+",
     image:
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=85&auto=format&fit=crop",
   },
   {
     id: "poes",
-    name: "Poes Garden Residences",
-    range: "\u20B920\u201360 Cr",
+    name: "Heritage Bungalow, Adyar",
+    range: "Price on request",
     image:
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=85&auto=format&fit=crop",
   },
@@ -59,27 +59,27 @@ export function CuratedOpportunities() {
       ref={sectionRef}
       className="relative bg-cream py-[130px]"
     >
-      <div className="mx-auto max-w-5xl px-8">
+      <div className="w-full px-8 md:px-24">
         <header>
+          <p className="font-mono text-[10px] tracking-[0.3em] text-gold  uppercase">
+            CURATED OPPORTUNITIES
+          </p>
           <h2
-            className="font-display font-light italic text-dark"
-            style={{ fontSize: "clamp(24px, 2.5vw, 40px)" }}
+            className="font-display font-light text-dark"
+            style={{ fontSize: "clamp(30px, 3.8vw, 62px)" }}
           >
             How We Curate Opportunities
           </h2>
-          <p className="mt-3 font-sans text-sm text-muted">
-            All properties are evaluated through RareScore&trade;.
+          <p className=" font-sans text-[14px] leading-relaxed text-muted max-w-2xl">
+            Each property below has been evaluated through RareScore&trade;. Full access is reserved for <br></br> clients under active advisory.
           </p>
         </header>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {PROPERTIES.map((p, i) => (
             <article
               key={p.id}
-              className={cn(
-                "group overflow-hidden border border-dark/10",
-                i > 0 && "border-t-0 md:border-l-0 md:border-t",
-              )}
+              className="group overflow-hidden"
             >
               <div className="relative h-[280px] overflow-hidden">
                 <Image
@@ -103,13 +103,13 @@ export function CuratedOpportunities() {
                 </div>
               </div>
 
-              <div className="bg-cream p-7">
+              <div className="pt-6">
                 <h3 className="font-display text-xl font-normal text-dark">
                   {p.name}
                 </h3>
                 <p className="mt-1 font-mono text-sm text-gold-dark">{p.range}</p>
 
-                <div className="mt-5 border-t border-dark/[0.08] pt-5">
+                <div className="mt-4 border-t border-dark/[0.08] pt-4">
                   <button
                     type="button"
                     onClick={openContact}
@@ -124,7 +124,7 @@ export function CuratedOpportunities() {
           ))}
         </div>
 
-        <p className="mt-12 text-center font-sans text-sm italic text-muted">
+        <p className="mt-20 text-center font-display text-[16px] font-light italic text-muted/80">
           Full access is limited to clients under active advisory.
         </p>
       </div>

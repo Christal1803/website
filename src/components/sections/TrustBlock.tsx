@@ -47,7 +47,7 @@ export function TrustBlock() {
       className="relative bg-dark py-[120px]"
       aria-label="Trust"
     >
-      <div ref={revealRef} className="mx-auto max-w-3xl px-8">
+      <div ref={revealRef} className="w-full px-8 md:px-24">
         <div
           data-reveal
           className="h-px w-[60px] bg-gold will-change-transform"
@@ -59,14 +59,12 @@ export function TrustBlock() {
           style={{ fontSize: "clamp(28px, 3.5vw, 52px)" }}
         >
           <span data-reveal className="block will-change-transform">
-            Trusted by founders, CXOs,
+            Trusted by founders, CXOs,and global investors
           </span>
-          <span data-reveal className="block will-change-transform">
-            and global investors
-          </span>
+
           <span
             data-reveal
-            className="block text-gold will-change-transform"
+            className="block text-gold will-change-transform mt-10"
           >
             who value clarity over access.
           </span>

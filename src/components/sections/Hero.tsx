@@ -170,7 +170,7 @@ export function Hero() {
 
         <h1
           className="mt-6 max-w-[18ch] font-display font-light leading-[1.05] text-cream md:max-w-[22ch]"
-          style={{ fontSize: "clamp(44px, 5.5vw, 80px)" }}
+          style={{ fontSize: "clamp(40px, 5.5vw, 66px)" }}
         >
           <span
             ref={line1Ref}
@@ -182,19 +182,19 @@ export function Hero() {
             ref={line2Ref}
             className="block pb-1 opacity-0 will-change-transform"
           >
-            who don&rsquo;t need more options&nbsp;&mdash;
+            who don&rsquo;t need more options&nbsp;&mdash;just the
           </span>
           <span
             ref={line3Ref}
             className="block pb-1 opacity-0 will-change-transform"
           >
-            just the right decisions.
+            right decisions.
           </span>
         </h1>
 
         <p
           ref={subtextRef}
-          className="mt-10 max-w-md font-sans text-[15px] font-light leading-relaxed text-muted opacity-0"
+          className="mt-5 max-w-md font-sans text-[14px] font-light leading-relaxed text-muted opacity-0"
         >
           We curate, evaluate, and secure high-conviction residential
           opportunities across Chennai and select global markets.

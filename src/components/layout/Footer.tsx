@@ -51,7 +51,7 @@ function InstagramIcon() {
 export function Footer() {
   return (
     <footer className="relative border-t border-gold/10 bg-[#120F0D] pb-24 pt-20">
-      <div className="mx-auto max-w-6xl px-8">
+      <div className="w-full px-8 md:px-24">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-3">
           <div>
             <Link

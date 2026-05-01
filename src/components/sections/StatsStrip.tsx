@@ -50,9 +50,9 @@ export function StatsStrip() {
     <section
       ref={sectionRef}
       aria-label="Firm statistics"
-      className="relative flex flex-col items-center justify-center gap-6 border-y border-[rgba(201,169,110,0.12)] bg-[rgba(201,169,110,0.06)] px-8 py-8 md:h-20 md:flex-row md:gap-16 md:py-0"
+      className="relative flex flex-col items-center justify-center gap-6 border-y border-[rgba(201,169,110,0.12)] bg-[rgba(201,169,110,0.06)] px-8 py-8 md:h-20 md:flex-row md:gap-32 lg:gap-48 md:py-0"
     >
-      <div className="flex items-baseline gap-2">
+      <div className="flex flex-col items-start gap-1 md:items-start">
         <span
           ref={valueRef}
           className="font-mono text-[22px] leading-none text-cream"
@@ -64,7 +64,7 @@ export function StatsStrip() {
         </span>
       </div>
 
-      <div className="flex items-baseline gap-2">
+      <div className="flex flex-col items-start gap-1 md:items-start">
         <span
           ref={yearsRef}
           className="font-mono text-[22px] leading-none text-cream"
@@ -76,8 +76,8 @@ export function StatsStrip() {
         </span>
       </div>
 
-      <div className="flex items-baseline gap-2">
-        <span className="font-mono text-[22px] leading-none text-cream">
+      <div className="flex flex-col items-start gap-1 md:items-start">
+        <span className="font-mono text-[22px] leading-none text-gold">
           Limited
         </span>
         <span className="font-sans text-[12px] text-muted">
