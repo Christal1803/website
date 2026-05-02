@@ -72,7 +72,7 @@ export function TrustBlock() {
 
         <p
           data-reveal
-          className="mt-10 font-sans text-sm italic text-muted will-change-transform"
+          className="mt-10 font-sans text-sm  text-muted will-change-transform"
         >
           We work with a limited number of clients. Not every request is
           accepted.

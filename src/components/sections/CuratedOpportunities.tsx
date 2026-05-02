@@ -57,7 +57,7 @@ export function CuratedOpportunities() {
     <section
       id="properties"
       ref={sectionRef}
-      className="relative bg-cream py-[130px]"
+      className="relative bg-cream py-[50px]"
     >
       <div className="w-full px-8 md:px-24">
         <header>
@@ -103,18 +103,20 @@ export function CuratedOpportunities() {
                 </div>
               </div>
 
-              <div className="pt-6">
-                <h3 className="font-display text-xl font-normal text-dark">
+              <div className="pt-8 px-4">
+                <h3 className="font-display text-[22px] font-light text-dark tracking-tight">
                   {p.name}
                 </h3>
-                <p className="mt-1 font-mono text-sm text-gold-dark">{p.range}</p>
+                <p className="mt-1.5 font-mono text-sm uppercase tracking-wider text-gold-dark/90">
+                  {p.range}
+                </p>
 
-                <div className="mt-4 border-t border-dark/[0.08] pt-4">
+                <div className="mt-6 border-t border-dark/[0.06] pt-5">
                   <button
                     type="button"
                     onClick={openContact}
                     data-cursor="hover"
-                    className="font-mono text-[11px] text-gold-dark/80 transition-colors duration-300 hover:text-gold-dark"
+                    className="font-mono text-[9px] uppercase tracking-[0.2em] text-muted/50 transition-colors duration-300 hover:text-gold-dark"
                   >
                     Request Full Access &rarr;
                   </button>

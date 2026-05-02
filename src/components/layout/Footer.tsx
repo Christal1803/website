@@ -2,10 +2,10 @@ import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 
 const NAV_LINKS = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/rarescore", label: "RareScore\u2122" },
-  { href: "/intelligence", label: "Intelligence" },
+  // { href: "/", label: "Home" },
+  { href: "/#rarescore-new", label: "About" },
+  { href: "/#services", label: "RareScore\u2122" },
+  { href: "/intelligence", label: "Contact" },
 ];
 
 function LinkedInIcon() {
@@ -50,7 +50,7 @@ function InstagramIcon() {
 
 export function Footer() {
   return (
-    <footer className="relative border-t border-gold/10 bg-[#120F0D] pb-24 pt-20">
+    <footer className="relative border-t border-gold/10 bg-[#120F0D] pb-8 pt-20">
       <div className="w-full px-8 md:px-24">
         <div className="grid grid-cols-1 gap-16 md:grid-cols-3">
           <div>
@@ -62,13 +62,12 @@ export function Footer() {
             >
               <Logo variant="full" className="h-7 w-auto" />
             </Link>
-            <p className="mt-2 font-mono text-[9px] tracking-[0.2em] text-muted">
-              PROPERTY COUNCIL
+            <p className="mt-2 font-mono text-[9px] tracking-[0.2em]  text-gold">
+              ADVISORY
             </p>
-            <div className="mt-8 space-y-1 font-sans text-sm italic leading-relaxed text-muted">
-              <p>Focused on the right decisions.</p>
-              <p>Every recommendation is carefully evaluated.</p>
-              <p>If it doesn&rsquo;t meet our standards, we don&rsquo;t recommend it.</p>
+            <div className="mt-8 space-y-1 font-sans text-sm leading-relaxed text-muted">
+              <p>Strategic real estate advisory for those who don&rsquo;t need more</p>
+              <p>options&mdash;just the right decisions.</p>
             </div>
           </div>
 
@@ -95,18 +94,28 @@ export function Footer() {
 
           <div>
             <p className="mb-5 font-mono text-[9px] tracking-[0.2em] text-gold">
-              GET IN TOUCH
+              CONTACT
             </p>
             <a
-              href="mailto:info@rarepropertycounsel.com"
+              href="tel:+919886064364"
               data-cursor="hover"
-              className="font-mono text-sm text-cream transition-colors duration-200 hover:text-gold"
+              className="font-mono text-sm text-muted transition-colors duration-200 hover:text-gold"
             >
-              info@rarepropertycounsel.com
+              +91 98860 64364
             </a>
+            <p>
+              <a
+                href="mailto:info@rarepropertycounsel.com"
+                data-cursor="hover"
+                className="font-mono text-sm text-muted transition-colors duration-200 hover:text-gold"
+              >
+                info@rareadvisory.co
+              </a>
+            </p>
+
             <p className="mt-2 font-sans text-sm text-muted">Chennai, India</p>
 
-            <div className="mt-6 flex items-center gap-4">
+            {/* <div className="mt-6 flex items-center gap-4">
               <a
                 href="#"
                 aria-label="LinkedIn"
@@ -123,7 +132,7 @@ export function Footer() {
               >
                 <InstagramIcon />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 

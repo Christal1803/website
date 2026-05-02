@@ -222,7 +222,7 @@ export function Hero() {
       </div>
 
       {/* Marquee */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-14 z-10 overflow-hidden border-t border-white/5 py-3">
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 overflow-hidden border-t border-white/5 py-3">
         <div className="hero-marquee-anim flex w-max whitespace-nowrap">
           <span className="shrink-0 font-mono text-[10px] tracking-[0.2em] text-gold/25">
             {MARQUEE_CONTENT}

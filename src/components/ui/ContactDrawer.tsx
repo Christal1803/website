@@ -22,7 +22,6 @@ type Option = {
 };
 
 const EMAIL = "info@rarepropertycounsel.com";
-const CLOSED_HEIGHT = 56;
 const OPEN_CAP = 680;
 const EASE_INOUT: [number, number, number, number] = [0.76, 0, 0.24, 1];
 const SOFT_EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
@@ -92,7 +91,6 @@ const CONSULTATION_STEPS = [
 ];
 
 const overlayVariants: Variants = {
-  strip: { opacity: 1, transition: { delay: 0.3, duration: 0.2 } },
   panel: { opacity: 1, transition: { delay: 0.25, duration: 0.35 } },
   exit: { opacity: 0, transition: { duration: 0.15 } },
 };
@@ -143,21 +141,16 @@ export function ContactDrawer() {
   const close = useCallback(() => setOpen(false), []);
   const backToMenu = useCallback(() => setView("menu"), []);
 
-  const openFromStrip = () => {
-    setView("consultation");
-    setOpen(true);
-  };
-
   return (
     <motion.section
       aria-label="Contact"
-      className="fixed inset-x-0 bottom-0 z-40 overflow-hidden border-t border-gold/20 bg-dark"
+      className="fixed inset-x-0 bottom-0 z-40 overflow-hidden bg-dark"
       initial={false}
-      animate={{ height: open ? maxHeight : CLOSED_HEIGHT }}
+      animate={{ height: open ? maxHeight : 0 }}
       transition={{ duration: 0.6, ease: EASE_INOUT }}
     >
       <AnimatePresence initial={false} mode="wait">
-        {open ? (
+        {open && (
           <motion.div
             key="panel"
             initial={{ opacity: 0 }}
@@ -172,37 +165,6 @@ export function ContactDrawer() {
               onBack={backToMenu}
               onClose={close}
             />
-          </motion.div>
-        ) : (
-          <motion.div
-            key="strip"
-            initial={{ opacity: 0 }}
-            animate="strip"
-            exit="exit"
-            variants={overlayVariants}
-            className="flex h-[56px] w-full items-center justify-center px-6"
-          >
-            <a
-              href={`mailto:${EMAIL}`}
-              data-cursor="hover"
-              className="hidden font-mono text-[12px] text-muted transition-colors hover:text-cream md:inline"
-            >
-              {EMAIL}
-            </a>
-            <span aria-hidden className="mx-6 hidden text-gold/30 md:inline">
-              ·
-            </span>
-            <button
-              type="button"
-              onClick={openFromStrip}
-              data-cursor="hover"
-              className="group inline-flex items-center gap-3 whitespace-nowrap font-mono text-[11px] uppercase tracking-[0.1em] text-gold transition-colors hover:text-cream"
-            >
-              <span>Book a Private Consultation</span>
-              <span className="transition-transform duration-300 group-hover:translate-x-1">
-                &rarr;
-              </span>
-            </button>
           </motion.div>
         )}
       </AnimatePresence>

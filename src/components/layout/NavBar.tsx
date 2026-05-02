@@ -10,10 +10,8 @@ import { openContactDrawer } from "@/lib/events";
 import { Logo } from "@/components/ui/Logo";
 
 const NAV_LINKS = [
-  { href: "/#about", label: "About" },
-  // { href: "/services", label: "Services" },
-  { href: "/rarescore", label: "RareScore\u2122" },
-  // { href: "/intelligence", label: "Intelligence" },
+  { href: "/#rarescore-new", label: "About" },
+  { href: "/#services", label: "RareScore\u2122" },
 ];
 
 const PHONE = "+1 (212) 555-0142";

@@ -43,25 +43,30 @@ export function RareScore() {
 
   return (
     <section className="relative bg-cream py-[130px] overflow-hidden" id="rarescore-new">
-      <div className="w-full pl-8 pr-8 md:px-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left Column */}
-          <div className="flex flex-col">
-            <p className="font-mono text-[10px] tracking-[0.3em] text-gold mb-4 uppercase">
-              THE <span className="text-dark">RARESCORE&trade;</span> DIFFERENCE
-            </p>
-            <h2
-              className="font-display font-light text-dark leading-[1.0] mb-8"
-              style={{ fontSize: "clamp(32px, 4vw, 64px)" }}
-            >
-              Not every property <br />
-              <span className="text-gold-dark">deserves your time.</span>
-            </h2>
-            <p className="font-sans text-[14px] text-muted leading-relaxed max-w-sm mb-16">
-              Every property we recommend is stress-tested against five non-negotiable filters. We don&apos;t bring you what passes. We bring you what survives.
-            </p>
+      <div className="w-full px-8 md:px-24">
+        {/* Top Section: Headings */}
+        <div className="mb-12 md:mb-20">
+          <p className="font-mono text-[10px] tracking-[0.3em] text-gold mb-4 uppercase">
+            THE <span className="text-dark">RARESCORE&trade;</span> DIFFERENCE
+          </p>
+          <h2
+            className="font-display font-light text-dark leading-[1.1] mb-8"
+            style={{ fontSize: "clamp(32px, 4vw, 64px)" }}
+          >
+            Not every property <br />
+            <span className="text-gold-dark">deserves your time.</span>
+          </h2>
+          <p className="font-sans text-[14px] text-muted leading-relaxed max-w-xl">
+            Every property we recommend is stress-tested against five non-negotiable filters. We <br />
+            don&apos;t bring you what passes. We bring you what survives.
+          </p>
+        </div>
 
-            <div className="flex flex-col border-t border-dark/10 md:mx-12 mt-8">
+        {/* Bottom Section: Accordion + Image Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-24 items-center">
+          {/* Left Column: Accordion */}
+          <div className="flex flex-col">
+            <div className="flex flex-col border-t border-dark/10 md:mx-12">
               {FILTERS.map((filter, index) => {
                 const isActive = activeIndex === index;
                 return (
@@ -113,7 +118,7 @@ export function RareScore() {
             </div>
           </div>
 
-          {/* Right Column - Desktop Image */}
+          {/* Right Column: Desktop Image */}
           <div className="hidden md:block">
             <div className="sticky top-32 w-full aspect-[4/5] overflow-hidden bg-dark/5">
               <AnimatePresence mode="wait">
