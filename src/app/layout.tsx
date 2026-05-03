@@ -4,7 +4,6 @@ import SmoothScroll from "@/components/providers/SmoothScroll";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { NavBar } from "@/components/layout/NavBar";
 import { Footer } from "@/components/layout/Footer";
-import { ContactDrawer } from "@/components/ui/ContactDrawer";
 import { FloatingContact } from "@/components/ui/FloatingContact";
 import { MarketReportModal } from "@/components/ui/MarketReportModal";
 import { cn } from "@/lib/utils";

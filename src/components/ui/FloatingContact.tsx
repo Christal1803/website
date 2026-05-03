@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { cn } from "@/lib/utils";
 
 export function FloatingContact() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +31,7 @@ export function FloatingContact() {
               className="flex items-center gap-2 rounded-full border border-white/10 bg-dark/80 p-2 backdrop-blur-xl transition-transform hover:scale-105 active:scale-95"
             >
               <div className="rounded-full bg-gold px-8 py-3.5 font-display text-[13px] font-medium tracking-tight text-dark">
-                Book a Consultation
+                Book Consultation
               </div>
               <div className="flex h-[46px] w-[46px] items-center justify-center rounded-full bg-gold text-dark">
                 <svg

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import { cn } from "@/lib/utils";
 import { openContactDrawer } from "@/lib/events";
 
 const PROPERTIES = [
@@ -76,7 +75,7 @@ export function CuratedOpportunities() {
         </header>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-          {PROPERTIES.map((p, i) => (
+          {PROPERTIES.map((p) => (
             <article
               key={p.id}
               className="group overflow-hidden"
