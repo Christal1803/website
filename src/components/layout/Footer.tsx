@@ -3,50 +3,49 @@ import { Logo } from "@/components/ui/Logo";
 
 const NAV_LINKS = [
   // { href: "/", label: "Home" },
-  { href: "/#rarescore-new", label: "About" },
-  { href: "/#services", label: "RareScore\u2122" },
-  { href: "/intelligence", label: "Contact" },
+  { href: "/#rarescore-new", label: "RareScore\u2122" },
+  { href: "/#services", label: "Services" },
 ];
 
-function LinkedInIcon() {
-  return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
-      <rect x="2" y="9" width="4" height="12" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-  );
-}
+// function LinkedInIcon() {
+//   return (
+//     <svg
+//       width="18"
+//       height="18"
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth="1.5"
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//       aria-hidden
+//     >
+//       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+//       <rect x="2" y="9" width="4" height="12" />
+//       <circle cx="4" cy="4" r="2" />
+//     </svg>
+//   );
+// }
 
-function InstagramIcon() {
-  return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-    </svg>
-  );
-}
+// function InstagramIcon() {
+//   return (
+//     <svg
+//       width="18"
+//       height="18"
+//       viewBox="0 0 24 24"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth="1.5"
+//       strokeLinecap="round"
+//       strokeLinejoin="round"
+//       aria-hidden
+//     >
+//       <rect x="3" y="3" width="18" height="18" rx="5" />
+//       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+//       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+//     </svg>
+//   );
+// }
 
 export function Footer() {
   return (
@@ -67,7 +66,7 @@ export function Footer() {
             </p>
             <div className="mt-8 space-y-1 font-sans text-sm leading-relaxed text-muted">
               <p>Strategic real estate advisory for those who don&rsquo;t need more</p>
-              <p>options&mdash;just the right decisions.</p>
+              <p>options, just the right decisions.</p>
             </div>
           </div>
 
@@ -101,11 +100,11 @@ export function Footer() {
               data-cursor="hover"
               className="font-mono text-sm text-muted transition-colors duration-200 hover:text-gold"
             >
-              +91 98860 64364
+              +91 9886064364
             </a>
             <p>
               <a
-                href="mailto:info@rarepropertycounsel.com"
+                href="mailto:info@rareadvisory.co"
                 data-cursor="hover"
                 className="font-mono text-sm text-muted transition-colors duration-200 hover:text-gold"
               >

@@ -10,11 +10,11 @@ import { openContactDrawer } from "@/lib/events";
 import { Logo } from "@/components/ui/Logo";
 
 const NAV_LINKS = [
-  { href: "/#rarescore-new", label: "About" },
-  { href: "/#services", label: "RareScore\u2122" },
+  { href: "/#rarescore-new", label: "RareScore\u2122" },
+  { href: "/#services", label: "Services" },
 ];
 
-const PHONE = "+1 (212) 555-0142";
+const PHONE = "+91-9886064364";
 
 const overlayVariants: Variants = {
   hidden: { y: "-100%" },
@@ -107,7 +107,13 @@ export function NavBar() {
 
         <div className="flex items-center">
           <span className="mr-6 hidden font-mono text-[12px] text-muted md:inline">
-            {PHONE}
+            <a
+              href="tel:+919886064364"
+              data-cursor="hover"
+              className="mr-6 hidden font-mono text-[12px] text-muted md:inline"
+            >
+              {PHONE}
+            </a>
           </span>
           <a
             href="mailto:info@rareadvisory.co"

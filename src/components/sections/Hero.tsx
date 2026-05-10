@@ -182,7 +182,7 @@ export function Hero() {
             ref={line2Ref}
             className="block pb-1 opacity-0 will-change-transform"
           >
-            who don&rsquo;t need more options&nbsp;&mdash;just the
+            who don&rsquo;t need more options,&nbsp;just the
           </span>
           <span
             ref={line3Ref}
