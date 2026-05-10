@@ -2,9 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { CONTACT_DRAWER_EVENT } from "@/lib/events";
 
 export function FloatingContact() {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Listen for global open event
+  useEffect(() => {
+    const onOpen = () => setIsOpen(true);
+    window.addEventListener(CONTACT_DRAWER_EVENT, onOpen);
+    return () => window.removeEventListener(CONTACT_DRAWER_EVENT, onOpen);
+  }, []);
 
   // Close on escape
   useEffect(() => {

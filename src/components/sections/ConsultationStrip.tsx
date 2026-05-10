@@ -6,7 +6,7 @@ const EMAIL = "info@rareadvisory.co";
 
 export function ConsultationStrip() {
   return (
-    <div className="w-full bg-dark border-b border-gold/10">
+    <div className="hidden w-full border-b border-gold/10 bg-dark md:block">
       <div className="flex h-[52px] w-full items-center justify-between px-8 md:px-24">
         <a
           href={`mailto:${EMAIL}`}
