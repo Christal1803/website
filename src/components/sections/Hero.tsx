@@ -188,7 +188,7 @@ export function Hero() {
             ref={line3Ref}
             className="block pb-1 opacity-0 will-change-transform"
           >
-            right decisions.
+            right decisions
           </span>
         </h1>
 

@@ -65,8 +65,8 @@ export function Footer() {
               ADVISORY
             </p>
             <div className="mt-8 space-y-1 font-sans text-sm leading-relaxed text-muted">
-              <p>Strategic real estate advisory for those who don&rsquo;t need more</p>
-              <p>options, just the right decisions.</p>
+              <p>Strategic real estate advisory for those who don&rsquo;t need more options,</p>
+              <p>just the right decisions</p>
             </div>
           </div>
 
