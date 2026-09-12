@@ -123,8 +123,10 @@ export function FloatingContact() {
                   <div className="h-4 w-4 rounded-full border border-dark/20 flex items-center justify-center">
                     <div className="h-2 w-2 rounded-full bg-dark/0 transition-colors" />
                   </div>
-                  <p className="font-mono text-[9px] tracking-widest text-dark/40 uppercase">
-                    By submitting, you agree to our privacy policy
+                  <p className="max-w-2xl font-mono text-[9px] leading-relaxed tracking-wide text-dark/40">
+                    I authorize Rare Property Advisory &amp; its representatives to
+                    contact me with updates and notifications via
+                    Email/SMS/WhatsApp/Call. This will override DND/NDNC.
                   </p>
                 </div>
               </div>

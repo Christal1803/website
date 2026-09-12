@@ -7,45 +7,44 @@ const NAV_LINKS = [
   { href: "/#services", label: "Services" },
 ];
 
-// function LinkedInIcon() {
-//   return (
-//     <svg
-//       width="18"
-//       height="18"
-//       viewBox="0 0 24 24"
-//       fill="none"
-//       stroke="currentColor"
-//       strokeWidth="1.5"
-//       strokeLinecap="round"
-//       strokeLinejoin="round"
-//       aria-hidden
-//     >
-//       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
-//       <rect x="2" y="9" width="4" height="12" />
-//       <circle cx="4" cy="4" r="2" />
-//     </svg>
-//   );
-// }
+function InstagramIcon() {
+  return (
+    <svg
+      width="36"
+      height="36"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
 
-// function InstagramIcon() {
-//   return (
-//     <svg
-//       width="18"
-//       height="18"
-//       viewBox="0 0 24 24"
-//       fill="none"
-//       stroke="currentColor"
-//       strokeWidth="1.5"
-//       strokeLinecap="round"
-//       strokeLinejoin="round"
-//       aria-hidden
-//     >
-//       <rect x="3" y="3" width="18" height="18" rx="5" />
-//       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-//       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-//     </svg>
-//   );
-// }
+function YouTubeIcon() {
+  return (
+    <svg
+      width="36"
+      height="36"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+    </svg>
+  );
+}
 
 export function Footer() {
   return (
@@ -57,7 +56,7 @@ export function Footer() {
               href="/"
               data-cursor="hover"
               className="inline-flex items-center"
-              aria-label="Rare Property Council — Home"
+              aria-label="Rare Property Advisory — Home"
             >
               <Logo variant="full" className="h-7 w-auto" />
             </Link>
@@ -114,38 +113,44 @@ export function Footer() {
 
             <p className="mt-2 font-sans text-sm text-muted">Chennai, India</p>
 
-            {/* <div className="mt-6 flex items-center gap-4">
+            <div className="mt-6 flex items-center gap-4">
               <a
-                href="#"
-                aria-label="LinkedIn"
-                data-cursor="hover"
-                className="text-cream/30 transition-colors duration-200 hover:text-gold"
-              >
-                <LinkedInIcon />
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/the_rare_advisor"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 data-cursor="hover"
                 className="text-cream/30 transition-colors duration-200 hover:text-gold"
               >
                 <InstagramIcon />
               </a>
-            </div> */}
+              <a
+                href="https://www.youtube.com/@RarePropertyAdvisory"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                data-cursor="hover"
+                className="text-cream/30 transition-colors duration-200 hover:text-gold"
+              >
+                <YouTubeIcon />
+              </a>
+            </div>
           </div>
         </div>
 
         <div className="mt-12 flex flex-col justify-between gap-4 border-t border-white/5 pt-8 sm:flex-row">
           <p className="font-sans text-[11px] text-muted/50">
-            &copy; 2026 Rare Property Council
+            &copy; 2026 Rare Property Advisory
           </p>
-          <Link
-            href="#"
+          <a
+            href="/Privacy_Policy.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             data-cursor="hover"
             className="font-sans text-[11px] text-muted/50 transition-colors duration-200 hover:text-muted"
           >
             Privacy Policy
-          </Link>
+          </a>
         </div>
       </div>
     </footer>

@@ -12,7 +12,7 @@ export function Logo({ variant = "full", className, priority = false }: LogoProp
     return (
       <Image
         src="/logo-mark.svg"
-        alt="RARE Property Council"
+        alt="Rare Property Advisory"
         width={32}
         height={32}
         priority={priority}
@@ -24,7 +24,7 @@ export function Logo({ variant = "full", className, priority = false }: LogoProp
   return (
     <Image
       src="/logo-full.svg"
-      alt="RARE Property Council"
+      alt="Rare Property Advisory"
       width={127}
       height={32}
       priority={priority}

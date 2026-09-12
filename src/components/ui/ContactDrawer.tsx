@@ -200,7 +200,7 @@ function ExpandedPanel({ view, setView, onBack, onClose }: ExpandedPanelProps) {
       <div className="grid h-full grid-cols-1 gap-10 overflow-y-auto px-8 pb-10 pt-8 md:grid-cols-[2fr_3fr] md:px-16">
         <div className="flex flex-col">
           <p className="font-mono text-[10px] tracking-[0.2em] text-gold">
-            RARE PROPERTY COUNCIL
+            RARE PROPERTY ADVISORY
           </p>
           <h2 className="mt-4 font-display text-[clamp(28px,3vw,44px)] font-light italic text-cream">
             Gain Private Access

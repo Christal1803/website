@@ -90,7 +90,7 @@ export function NavBar() {
           href="/"
           data-cursor="hover"
           className="flex items-center"
-          aria-label="Rare Property Council — Home"
+          aria-label="Rare Property Advisory — Home"
         >
           <Logo variant="full" priority className="h-6 w-auto md:h-7" />
         </Link>
@@ -155,7 +155,7 @@ export function NavBar() {
               href="/"
               data-cursor="hover"
               onClick={() => setMenuOpen(false)}
-              aria-label="Rare Property Council — Home"
+              aria-label="Rare Property Advisory — Home"
               className="absolute left-8 top-6"
             >
               <Logo variant="full" className="h-6 w-auto" />

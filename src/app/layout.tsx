@@ -30,14 +30,14 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RARE Property Council | Luxury Real Estate Advisory, Chennai",
+  title: "Rare Property Advisory | Luxury Real Estate Advisory, Chennai",
   description:
     "Strategic real estate advisory for discerning buyers in Chennai and global markets. High-conviction opportunities, evaluated through RareScore\u2122.",
   openGraph: {
     type: "website",
     locale: "en_IN",
-    siteName: "RARE Property Council",
-    title: "RARE Property Council | Luxury Real Estate Advisory, Chennai",
+    siteName: "Rare Property Advisory",
+    title: "Rare Property Advisory | Luxury Real Estate Advisory, Chennai",
     description:
       "Strategic real estate advisory for discerning buyers in Chennai and global markets. High-conviction opportunities, evaluated through RareScore\u2122.",
   },
